@@ -25,6 +25,7 @@
         margin: 20px auto;
         max-width: 700px;
         text-align: center;
+        display: inline-block;
     }
 
     section i {
@@ -32,10 +33,19 @@
       margin-bottom: 15px;
       color: #444;
     }
-    #home { background-color: #e1f5fe; }
-    #about { background-color: #ffe0b2; }
-    #gallery { background-color: #c8e6c9; }
-    #contact { background-color: #f8bbd0; }
+    #home { background-color: #e1f5fe; 
+    width:200px;
+    height:50px;
+    }
+    #about { background-color: #ffe0b2;
+     width:200px;
+    height:50px; }
+    #gallery { background-color: #c8e6c9;
+     width:200px;
+    height:50px; }
+    #contact { background-color: #f8bbd0;
+     width:200px;
+    height:50px; }
 
     .navbar {
       display: flex;
@@ -73,7 +83,8 @@
 </head>
 <body>
 <header>
-    <h2>My Website</h2> 
+    <h1>Welcome to My Website</h1>
+    <p>This is a simple webpage with a navigation bar and sections.</p> 
 </header>
  <div class="navbar">
     <a class="nav-item" href="#home">
@@ -89,10 +100,12 @@
       <img src="https://img.icons8.com/ios-filled/50/contacts.png" alt="Contact Icon"> Contact
     </a>
   </div>
+  <div class="container">
+    
   <section id="home">
     <img src="https://img.icons8.com/ios-filled/50/home.png" alt="Home Icon">
     <h1>Home</h1>
-    <p>Welcome to our homepage!</p>
+    <p>Hello, Welcome to our homepage! </p>
   </section>
 
   <section id="about">
@@ -112,6 +125,7 @@
     <h1>Contact</h1>
     <p>Get in touch with us anytime.</p>
   </section>
+  </div>
   <hr>
   <footer>
     <p>&copy; 2025 My Website. All rights reserved.</p>
