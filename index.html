@@ -13,45 +13,35 @@
     body {
       background-color:rgb(253, 242, 242);
     }
-    section {
-        padding: 50px 5px;
-        min-height: 25vh;
-        color: #333;
-        margin: 20px 0;
+    div.container {
+        
         border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         margin: 20px auto;
-        max-width: 700px;
+        max-width: 1100px;
         text-align: center;
         display: inline-block;
+        
     }
-
-    section i {
-      font-size: 50px;
-      margin-bottom: 15px;
-      color: #444;
+    div.container div {
+      padding: 20px;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: inline-block;
+      width: 200px;
+      height: 200px;
+      background-color: lightblue;
     }
-    #home { background-color: #e1f5fe; 
-    width:200px;
-    height:50px;
+    div.container div img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 10px;
     }
-    #about { background-color: #ffe0b2;
-     width:200px;
-    height:50px; }
-    #gallery { background-color: #c8e6c9;
-     width:200px;
-    height:50px; }
-    #contact { background-color: #f8bbd0;
-     width:200px;
-    height:50px; }
-
     .navbar {
       display: flex;
       align-items: center;
       justify-content: space-around;
-      background-color:rgb(231, 231, 233);
+      background-color:lightcoral;
       padding: 15px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
@@ -84,7 +74,7 @@
 <body>
 <header>
     <h1>Welcome to My Website</h1>
-    <p>This is a simple webpage with a navigation bar and sections.</p> 
+    <p>This is a simple webpage with a navigation bar and divisions.</p> 
 </header>
  <div class="navbar">
     <a class="nav-item" href="#home">
@@ -102,29 +92,29 @@
   </div>
   <div class="container">
     
-  <section id="home">
+  <div id="home">
     <img src="https://img.icons8.com/ios-filled/50/home.png" alt="Home Icon">
     <h1>Home</h1>
     <p>Hello, Welcome to our homepage! </p>
-  </section>
+  </div>
 
-  <section id="about">
+  <div id="about">
     <img src="https://img.icons8.com/ios-filled/50/about.png" alt="About Icon">
     <h1>About</h1>
     <p>Learn more about who we are and what we do.</p>
-  </section>
+  </div>
 
-  <section id="gallery">
+  <div id="gallery">
     <img src="https://img.icons8.com/ios-filled/50/gallery.png" alt="Gallery Icon">
     <h1>Gallery</h1>
     <p>Check out our beautiful collection of photos.</p>
-  </section>
+  </div>
 
-  <section id="contact">
+  <div id="contact">
     <img src="https://img.icons8.com/ios-filled/50/contacts.png" alt="Contact Icon">
     <h1>Contact</h1>
     <p>Get in touch with us anytime.</p>
-  </section>
+  </div>
   </div>
   <hr>
   <footer>
